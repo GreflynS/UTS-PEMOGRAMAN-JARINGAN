@@ -16,6 +16,7 @@ syarat UTS :
 8. Silahkan kumpulkan link github repository di assignment ini.
    
    #### --- JANGAN TELAT ! ---
+   
 
 ## APA ITU PROTOKOL UDP?
 
@@ -36,7 +37,9 @@ UDP sering digunakan untuk aplikasi yang memerlukan komunikasi yang cepat dan ef
    
 # PENJELASAN CODINGAN
 
+
 ## 1. Server
+
 ![image](https://github.com/GreflynS/UTS-PEMOGRAMAN-JARINGAN/assets/163794459/41d3c187-d463-4a0f-8b25-d8170d3ebe47)
 
 Pertama, mengimpor modul `socket` yang memungkinkan kita untuk menggunakan fungsi-fungsi yang diperlukan untuk membuat dan mengelola socket di Python.
@@ -57,6 +60,7 @@ codingan berikutnya yang ada diatas digunakan untuk menerima pesan dari klien. F
 ![image](https://github.com/GreflynS/UTS-PEMOGRAMAN-JARINGAN/assets/163794459/2d0f4ad7-9d72-4d3a-b204-325b32cd165d)
 
 Berikutnya dan yang terakhir untuk server, ada Fungsi utama yang menjalankan logika permainan server. Ini menciptakan socket UDP, mengikatnya ke alamat localhost pada port 12345, dan kemudian mulai menunggu koneksi dari klien. Setelah klien terhubung, server mengirimkan kata warna dalam bahasa Inggris kepada semua klien, menerima jawaban dari klien, memeriksa jawaban yang diberikan, dan memberikan umpan balik kepada klien. Selain itu, server juga memeriksa apakah ada klien baru yang ingin terhubung dan menambahkannya ke dalam daftar klien yang terhubung. Proses ini berlangsung secara berulang dengan interval waktu tertentu menggunakan fungsi `time.sleep(10)`.
+
 
 
 ## 2. Client
@@ -106,6 +110,8 @@ Jika ingin menjaga skor klien dan hanya mengatur ulang skor ketika klien baru mu
 ![image](https://github.com/GreflynS/UTS-PEMOGRAMAN-JARINGAN/assets/163794459/82b401be-dbf6-428b-adf3-85ed90434a58)
 
 Bagian ini menangani penutupan koneksi dan membersihkan sumber daya saat klien dihentikan, baik karena pengguna menekan Ctrl+C atau ada kesalahan lain.
+
+
 
 ## 3. Output
 
